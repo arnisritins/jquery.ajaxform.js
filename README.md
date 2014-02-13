@@ -19,7 +19,7 @@ Simple jQuery plug-in that helps to work with Ajax forms easily.
 Include jQuery library (version 1.7 or higher):
 
 ```html
-<script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>	
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>	
 ```
 
 Include jQuery Ajax Form plug-in:
