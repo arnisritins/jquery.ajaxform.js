@@ -39,8 +39,9 @@
 			e.preventDefault();
 
 			// Checks if confirmation is needed
-			if(config.confirm && ! confirm(config.confirm))
+			if(config.confirm && ! confirm(config.confirm)){
 				return;
+			}
 
 			// Starts loading
 			loading(true);
@@ -49,21 +50,21 @@
 			xhr().done(function(data){
 
 				// Checks if redirect is needed
-				if(data.redirect)
+				if(data.redirect){
 
 					// Redirects to specified URL
 					return window.location.replace(data.redirect);
 
-				else {
+				} else {
 
 					// Fires form event depending on response status
 					switch(data.status){
 						case 'success':
 							config.onFormSuccess(data.message);
-						break;
+							break;
 						case 'error':
 							config.onFormError(data.message, data.flags);
-						break;
+							break;
 					}
 
 					// Shows form message
