@@ -49,3 +49,27 @@ $('#ajaxform').ajaxform({
 	onFormError: function(){}
 });
 ```
+
+### Server responses
+Server have to return a form submission results as a JSON string
+
+#### Success
+```
+{"status":"success","message":"Form submission succeed!"}
+```
+
+#### Error
+```
+{"status":"error","message":"Form submission failed!"}
+```
+
+#### Redirect
+```
+{"redirect":"success.html"}
+```
+
+#### Reset form after submission
+```
+{"status":"success","message":"Form submission succeed!","reset":true}
+```
+By default, form fields values are kept in form fields, but it's possible to clear all form by setting `reset` property as true.
