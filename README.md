@@ -72,4 +72,4 @@ Server have to return a form submission results as a JSON string
 ```
 {"status":"success","message":"Form submission succeed!","reset":true}
 ```
-By default, form fields values are kept in form fields, but it's possible to clear all form by setting `reset` property as true.
+By default, form field values are kept in form fields, but it's possible to clear them by setting `reset` property as true.
